@@ -8,7 +8,7 @@ function Sidebar() {
         <h1>Name</h1>
         <p>email</p>
       </div>
-      <div className="sidebar__bottom">
+      <div className="sidebar__Bottom">
         <h1>All Categories</h1>
         <span>Entertainment</span>
         <span>Technology</span>
