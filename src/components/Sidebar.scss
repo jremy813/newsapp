@@ -1,0 +1,16 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  .sidebar__Top {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar__Bottom {
+    display: flex;
+    flex-direction: column;
+    span {
+      display: block;
+    }
+  }
+}
