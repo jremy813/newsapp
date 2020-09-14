@@ -1,23 +1,30 @@
 .sidebar {
   flex: 0.2;
   height: 100vh;
-  text-align: center;
+
   background-color: peachpuff;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   .sidebar__Top {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin-left: 2rem;
+    flex: 0.4;
+    margin-left: 3.5rem;
   }
   .sidebar__Middle {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin-left: 2rem;
+    flex: 1;
+    margin-left: 3.5rem;
+
     span {
       display: block;
+      margin-bottom: 2rem;
     }
+  }
+  .sidebar__Bottom {
+    flex: 0.2;
+    margin-left: 3.5rem;
   }
 }

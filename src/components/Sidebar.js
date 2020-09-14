@@ -17,7 +17,9 @@ function Sidebar() {
         <span>Sports</span>
         <span>Sciences</span>
       </div>
-      <div className="sidebar__Bottom"></div>
+      <div className="sidebar__Bottom">
+        <span>Replace me </span>
+      </div>
     </div>
   );
 }
