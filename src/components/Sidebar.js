@@ -1,12 +1,13 @@
 import React from "react";
 import "./Sidebar.scss";
+import Switch from "@material-ui/core/Switch";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__Top">
         <h1>Name</h1>
-        <span>Email</span>
+        <span>email</span>
       </div>
       <div className="sidebar__Middle">
         <h1>All Categories</h1>
@@ -18,7 +19,7 @@ function Sidebar() {
         <span>Sciences</span>
       </div>
       <div className="sidebar__Bottom">
-        <span>Replace me </span>
+        <Switch />
       </div>
     </div>
   );

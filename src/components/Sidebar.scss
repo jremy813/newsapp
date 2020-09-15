@@ -1,7 +1,8 @@
 .sidebar {
   flex: 0.2;
   height: 100vh;
-
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
   background-color: peachpuff;
   display: flex;
   flex-direction: column;
@@ -11,16 +12,28 @@
     flex-direction: column;
     flex: 0.4;
     margin-left: 3.5rem;
+    h1 {
+      color: #454d66;
+    }
+    span {
+      color: #272727;
+      opacity: 50%;
+    }
   }
   .sidebar__Middle {
     display: flex;
     flex-direction: column;
     flex: 1;
     margin-left: 3.5rem;
+    h1 {
+      color: #454d66;
+    }
 
     span {
       display: block;
       margin-bottom: 2rem;
+      color: #272727;
+      opacity: 50%;
     }
   }
   .sidebar__Bottom {
