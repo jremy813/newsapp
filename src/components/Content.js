@@ -1,11 +1,12 @@
 import React from "react";
 import "./Content.scss";
+import Search from "./Search";
 
 function Content() {
   return (
     <>
       <div className="content">
-        <h1>Hello</h1>
+        <Search />
       </div>
     </>
   );
