@@ -10,7 +10,7 @@ function Sidebar() {
         <span>email</span>
       </div>
       <div className="sidebar__Middle">
-        <h1>All Categories</h1>
+        <h2>All Categories</h2>
         <span>Entertainment</span>
         <span>Technology</span>
         <span>Business</span>
