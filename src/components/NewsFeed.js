@@ -14,14 +14,23 @@ function NewsFeed({ searchData }) {
 
   return (
     <div className="newsFeed">
-      {news.map((info) => (
-        <div className="newsFeed__Card">
-          <h3>{info.title}</h3>
-          <span>{info.source.name}</span>
-          <span>{info.author}</span>
-          <p>{info.description}</p>
-        </div>
-      ))}
+      {!searchData
+        ? news.map((info) => (
+            <div className="newsFeed__Card">
+              <h3>{info.title}</h3>
+              <span>{info.source.name}</span>
+              <span>{info.author}</span>
+              <p>{info.description}</p>
+            </div>
+          ))
+        : searchData.map((info) => (
+            <div className="newsFeed__Card">
+              <h3>{info.title}</h3>
+              <span>{info.source.name}</span>
+              <span>{info.author}</span>
+              <p>{info.description}</p>
+            </div>
+          ))}
     </div>
   );
 }
