@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: fixed;
+
   .sidebar__Top {
     display: flex;
     flex-direction: column;
@@ -26,6 +28,7 @@
     margin-left: 3.5rem;
     h2 {
       color: #454d66;
+      margin-right: 2rem;
     }
 
     span {

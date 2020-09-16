@@ -1,8 +1,27 @@
+.newsFeed {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 15rem;
+}
+
 .newsFeed__Card {
   background-color: #333;
   color: white;
-  height: 20rem;
-  width: 25%;
+  width: 10rem;
   padding: 2rem;
+  margin: 2rem;
+  height: 20rem;
   border-radius: 2rem;
+  overflow: scroll;
+}
+
+.newsFeed__Card::-webkit-scrollbar {
+  display: none;
+}
+.newsFeed__Card {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
