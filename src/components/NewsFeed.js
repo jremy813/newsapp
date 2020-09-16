@@ -15,7 +15,12 @@ function NewsFeed() {
   return (
     <div className="newsFeed">
       {news.map((info) => (
-        <h1>{info.title}</h1>
+        <div className="newsFeed__Card">
+          <h3>{info.title}</h3>
+          <span>{info.source.name}</span>
+          <span>{info.author}</span>
+          <p>{info.description}</p>
+        </div>
       ))}
     </div>
   );
