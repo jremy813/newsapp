@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./NewsFeed.scss";
 
-function NewsFeed() {
+function NewsFeed({ searchData }) {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function NewsFeed() {
       .then((res) => res.json())
       .then((data) => setNews(data.articles));
   }, []);
-  console.log(news);
+
   return (
     <div className="newsFeed">
       {news.map((info) => (
