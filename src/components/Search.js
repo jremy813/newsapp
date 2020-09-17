@@ -8,7 +8,7 @@ function Search({ setSearchData }) {
 
   useEffect(() => {
     fetch(
-      `http://newsapi.org/v2/everything?q=${text}&apiKey=03712056389d4d30a0846278a2030a50`
+      `http://newsapi.org/v2/everything?qInTitle=${text}&apiKey=03712056389d4d30a0846278a2030a50`
     )
       .then((res) => res.json())
       .then((data) => setSearchData(data.articles));
