@@ -3,14 +3,14 @@ import "./Content.scss";
 import Search from "./Search";
 import NewsFeed from "./NewsFeed";
 
-function Content() {
+function Content({ categoryData }) {
   const [searchData, setSearchData] = useState([]);
 
   return (
     <>
       <div className="content">
         <Search setSearchData={setSearchData} />
-        <NewsFeed searchData={searchData} />
+        <NewsFeed categoryData={categoryData} searchData={searchData} />
       </div>
     </>
   );
