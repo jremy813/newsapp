@@ -4,16 +4,6 @@ import "./NewsFeed.scss";
 function NewsFeed({ searchData, categoryData }) {
   const [headlines, setHeadlines] = useState([]);
 
-  useEffect(() => {
-    if (searchData) {
-      setHeadlines(searchData);
-    }
-
-    if (categoryData) {
-      setHeadlines(categoryData);
-    }
-  }, []);
-
   return (
     <>
       <div className="newsFeed">
